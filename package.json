@@ -1,23 +1,30 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "npm run build && wrangler pages dev",
-    "postinstall": "nuxt prepare",
-    "deploy": "npm run build && wrangler pages deploy",
-    "cf-typegen": "wrangler types"
-  },
-  "dependencies": {
-    "nuxt": "^3.12.4",
-    "vue": "latest"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240718.0",
-    "nitro-cloudflare-dev": "^0.1.6",
-    "wrangler": "^3.65.1"
-  }
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@mdi/font": "^7.4.47",
+        "@nuxtjs/dotenv": "^1.4.2",
+        "@pinia/nuxt": "^0.5.1",
+        "nuxt": "^3.12.4",
+        "pinia": "^2.1.7",
+        "vue": "latest"
+    },
+    "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72",
+    "devDependencies": {
+        "@vueuse/core": "^10.11.0",
+        "@vueuse/integrations": "^10.11.0",
+        "@vueuse/nuxt": "^10.11.0",
+        "less": "^4.2.0",
+        "universal-cookie": "^7.2.0",
+        "vite-plugin-vuetify": "^2.0.3",
+        "vuetify": "^3.6.13"
+    }
 }
